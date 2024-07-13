@@ -111,6 +111,7 @@ button:hover {
 }
 
 .btn1 {
+  color: #333;
   color: var(--btn1-cl) ;
   border-radius: 0px 8px 8px 0px;
   background-color: #00ff22;
