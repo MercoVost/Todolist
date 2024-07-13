@@ -1,3 +1,13 @@
+:root {
+  --var-button-cl: #333;
+}
+@media (prefers-color-scheme: white) {
+ :root {
+   --var-button-cl: #333;
+
+ } 
+}
+
 * {
   padding: 0;
   margin: 0;
