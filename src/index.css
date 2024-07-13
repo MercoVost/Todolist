@@ -1,5 +1,6 @@
 :root {
   --btn1-cl: #000000;
+  color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
  :root {
@@ -147,6 +148,7 @@ button:hover {
   .btn1 {
     border-radius: 8px;
     margin-top: 8px;
+    color: var(--btn1-cl)
   }
 }
 
@@ -154,13 +156,24 @@ button:hover {
  
   input {
     width: 85%;
+
+
   }
   button {
     padding: 0.2em 0.7em;
   }
+
+
+  .btn1 {
+    color: var(--btn1-cl)
+  }
 }
 
 @media (max-width: 320px) {
+
+  .btn1 {
+    color: var(--btn1-cl)
+  }
 
 }
 
