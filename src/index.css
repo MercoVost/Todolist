@@ -1,9 +1,9 @@
 :root {
-  --btn1-cl: #333;
+  --btn1-cl: #000000;
 }
 @media (prefers-color-scheme: dark) {
  :root {
-   --btn1-cl: #333;
+   --btn1-cl: #000000;
 
  } 
 }
@@ -111,7 +111,7 @@ button:hover {
 }
 
 .btn1 {
-  color: #333;
+  color: #000000;
   color: var(--btn1-cl) ;
   border-radius: 0px 8px 8px 0px;
   background-color: #00ff22;
