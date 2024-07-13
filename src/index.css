@@ -2,9 +2,10 @@
   --btn1-cl: #000000;
   color-scheme: light;
 }
+
 @media (prefers-color-scheme: dark) {
- :root {
-   --btn1-cl: #000000;
+  :root {
+  --btn1-cl: #000000;
 
  } 
 }
@@ -13,7 +14,6 @@
   padding: 0;
   margin: 0;
 }
-
 
 body {
   margin: 0;
@@ -28,11 +28,9 @@ ol {
   word-break: break-all;
   text-align: start;
   list-style-type: none;
-  
 }
 
 li {
-
   margin-top: 8px;
   display: flex;
   align-items: center;
@@ -44,21 +42,16 @@ li:hover {
  
 }
 
-
-
 #root {
   width: 80%;
- margin: 0 auto;
+  margin: 0 auto;
   padding: 2rem;
   text-align: center;
-
-
   background: rgb(4, 226, 255);
   border-radius: 20px;
 }
 
 .card {
-  
   display: flex;
   padding: 2em 0;
   width: 100%;
@@ -66,26 +59,20 @@ li:hover {
 
 input {
   border-radius: 8px 0px 0px 8px;
-    border: 1.5px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    width: 100%;
-    display: inline;
-    
+  border: 1.5px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 100%;
+  display: inline;
 }
-
 
 input:hover {
   border-color: #000000;
 }
-
-
-
-
 
 button {
   border-radius: 8px;
@@ -100,12 +87,7 @@ button {
   color: rgb(255, 255, 255);
   word-break: normal;
   margin-left: 1%;
-
 }
-
-
-
-
 
 button:hover {
   border-color: #ffffff;
@@ -121,28 +103,28 @@ button:hover {
 }
 
 @media (max-width: 768px) {
- 
   .card {
     display: block;
     padding: 0;
   }
+
+  li {
+    display: block;
+  }
+
   input {
     border-radius: 6px;
     width: 90%;
     position: relative;
     display: block;
   }
-    button {
+
+  button {
     border-radius: 6px;
     padding: 0.2em 0.7em;
     margin-top: 8px;
     margin-left: 0;
     font-size: 14px;
-    
-  }
-
-  li {
-    display: block;
   }
 
   .btn1 {
@@ -153,16 +135,13 @@ button:hover {
 }
 
 @media (max-width: 480px) {
- 
   input {
     width: 85%;
-
-
   }
+
   button {
     padding: 0.2em 0.7em;
   }
-
 
   .btn1 {
     color: var(--btn1-cl)
@@ -170,11 +149,9 @@ button:hover {
 }
 
 @media (max-width: 320px) {
-
   .btn1 {
     color: var(--btn1-cl)
   }
-
 }
 
 
