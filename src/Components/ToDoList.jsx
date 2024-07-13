@@ -15,7 +15,8 @@ export default function ToDoList() {
     setCount(e.target.value);
   };
 
-  const display = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     if (count.trim() !== "") {
       setTodosText((prevTodos) => {
         const updatedTodos = [...prevTodos, count];
@@ -36,13 +37,19 @@ export default function ToDoList() {
 
   return (
     <>
-      <div className="card">
-        <input type="text" value={count} onChange={countInput} />
-        <button className="btn1" onClick={display}>
-          Добавить
-        </button>
-      </div>
-
+      <form onSubmit={handleSubmit}>
+        <div className="card">
+          <input
+            type="text"
+            value={count}
+            onChange={countInput}
+            placeholder="Введите текст"
+          />
+          <button className="btn1" type="submit">
+            Добавить
+          </button>
+        </div>
+      </form>
       <ol>
         {todosText.map((todo, index) => (
           <li key={index}>
