@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function ToDoList() {
+export default function TodoList() {
   const [count, setCount] = useState("");
   const [todosText, setTodosText] = useState([]);
 
